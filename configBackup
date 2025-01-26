@@ -1,0 +1,14 @@
+vrrp_instance VI_1 {
+        state backup
+        interface enp0s3
+        virtual_router_id 1
+        priority 50
+        advert_int 1
+        authentication {
+        auth_type PASS
+        auth_pass 12345
+
+}
+virtual_ipaddress {
+192.168.1.200/24
+}
